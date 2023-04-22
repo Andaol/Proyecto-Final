@@ -1,20 +1,79 @@
-const turno = document.querySelector (".d-flex");
-const menu = document.querySelector (".formulario");
 
-console.log(menu)
-console.log(turno)
+document.querySelector("#submit").addEventListener("click", e => {
+    e.preventDefault();
+
+    //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
+    let telefono = "593985329327";
+
+    let cliente = document.querySelector("#cliente").value;
+    let fecha = document.querySelector("#fecha").value;
+    let hora = document.querySelector("#hora").value;
+    let empleado = document.querySelector("#empleado").value;
+    let servicio = document.querySelector("#servicio").value;
+    let resp = document.querySelector("#respuesta");
+
+    resp.classList.remove("fail");
+    resp.classList.remove("send");
+
+    let url = `https://api.whatsapp.com/send?phone=593985329327&text=
+		*Mayra's Panadería y Pastelería*%0A
+		*Reserva tu Pedido a Domicilio *%0A%0A
+		*¿Cuál es tu nombre?*%0A
+		${cliente}%0A
+		*Indica la fecha de tu reserva*%0A
+		${fecha}%0A
+		*Indica la hora de tu reserva*%0A
+		${hora}%0A
+		*Empleado de preferencia*%0A
+		${empleado}%0A
+		*¿Cuál es el pastel que desea?*%0A
+		${servicio}`;
+
+    if (cliente === "" || fecha === "" || hora === "") {
+        resp.classList.add("fail");
+        resp.innerHTML = `Faltan algunos datos, ${cliente}`;
+        return false;
+    }
+    resp.classList.remove("fail");
+    resp.classList.add("send");
+    resp.innerHTML = `Se ha enviado tu reserva, ${cliente}`;
+
+    window.open(url);
+});
 
 
-turno.addEventListener("click", ()=>{
-    menu.classList.toggle("deploy")
-})
 
 
-/*Aplico una condicional*/
 
-window.addEventListener("click", e=>{
-    if(menu.classList.contains("deploy")
-        && e.target != menu && e.target != turno){
-            menu.classList.toggle("deploy")
-        }
-})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+function pdfexport(){
+
+    var nombre = document.getElementById ("nombre").value,
+        apellidos = document.getElementById ("apellidos").value,
+        correo = document.getElementById ("correo").value,
+        obra = document.getElementById ("obra").value,
+        empleado = document.getElementById ("empleado").value,
+        fecha = document.getElementById ("fecha").value,
+        hora = document.getElementById ("hora").value,
+        especialidad = document.getElementById ("especialidad").value;
+        
+
+
+    var doc=new jsPDF();
+    doc.setFontSize(20)
+    doc.text (nombre)
+*/
