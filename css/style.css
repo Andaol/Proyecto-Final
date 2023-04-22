@@ -21,11 +21,7 @@ body{
   line-height: 1.5;
 }
 
-p{
-font-size: 1.6rem;
-font-family: Arial, Helvetica, sans-serif;
-color: var(--negro);
-}
+
 a {
 text-decoration: none;
 }
@@ -38,17 +34,19 @@ text-decoration: none;
 }
 
 h1,h2,h3 {
-text-align: center;
-color: var(--secundario);
-font-family: var(--fuentePrincipal);
-}
+  text-align: center;
+  color: var(--secundario);
+  font-family: var(--fuentePrincipal);
+  }
 
 .navbar-nav{
 font-family: var(--fuentePrincipal);
-gap: 4rem;
+gap: 3rem;
 right: 0%;
-width: 40rem;
+width: 40%;
+font-size: 1.5rem;
 }
+
 
 /*Header*/
 
@@ -72,14 +70,17 @@ width: 40rem;
 }
 
 .titulo{
-  box-shadow: 3rem rgb(0,0,0,5);
+  box-shadow: 4rem rgb(0,0,0,5);
   font-size: 5rem;
   margin-bottom: 2rem;
+  
 }
 
 .parrafo{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-shadow: #000 6rem;
 }
 
 .d-flex{
@@ -109,14 +110,6 @@ width: 40rem;
 .deploy{
   transform: translate(0);
 }
-/*Footer*/
-
-.footer {
-  background-color: var(--secundario);
-  padding: 1rem 0;
-  margin-top: 2rem;
-
-}
 
 .footer__texto{
   font-family: var(--fuentePrincipal);
@@ -125,65 +118,49 @@ width: 40rem;
   font-size: 0.8rem;
 }
 
-/*Grid
-.grid{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15rem;
-}
-
-@media (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(3,1fr);
-    padding: 1rem;
-  }
-} */
-
 /*Prestaciones*/
 
 .subtitulo{
   text-align: center;
-  font-weight: 300;
+  font-weight: 250;
   color: var(--negro);
   margin-bottom: 4rem;
   font-size: 4rem;
 }
 
-.contenedor__prestacion{
-  background-color: #f2f2f2;
+.contenedor{
+  width: 90%;
+  max-width: 120rem;
+  margin: auto;
+  padding: 6rem ;
+}
+
+.gallery{
+  background: var(--secundario);
+}
+
+.contenedor_galeria{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  justify-content: space-around;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
+  grid-template-columns: repeat(3, 1Fr);
+  grid-template-rows: 25rem;
+  grid-gap: 5rem
 
 }
-.prestacion{
-  background-color: var(--blanco);
-  gap: 2rem;
+.Descripcion{
+  text-align: center;
+  font-size: 2rem;
+
 }
-.card {
-  width: 30%;
+
+.img_galeria{
+  width: 100%;
   display: block;
   margin-bottom: 1.5rem;
-  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 5);
-  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 5);
+  cursor: pointer
+
 }
 
-.card.title{
-  text-align: center;
-}
-.prestacion__imagen{
-  width: 100%;
-}
-.prestacion__nombre{
-  font-size: 2rem;
-  font-family: var(--fuentePrincipal);
-  margin: 1rem 0;
-  text-align: center;
-  line-height: 1.2;
-}
 
 /*FORMULARIO CONTACTO*/
 .advertencia{
@@ -338,4 +315,125 @@ ul{font-size: 1.8rem;
   font-family: var(--fuentePrincipal);
   margin-block-end: 20px;
   margin-block-start: 20px;
+}
+
+/*Footer*/
+
+footer{
+  background-color: var(--secundario);
+  padding-bottom: 1rem;
+}
+
+.contenedor__footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+.contact_us{
+  width: 40%;
+  color: #fff;
+}
+
+.brand{
+  color: #fff;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.brand_texto{
+  font-weight: 500;
+  text-align: center;
+}
+
+.social__media{
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+}
+.social__icon{
+  display: inline-block;
+  margin-left: 2rem;
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+.social__icon:hover{
+  background-color: #fff;
+  color: #22f7da;
+}
+
+.social__icon i{
+  font-size: 3rem;
+  line-height: 6rem;
+}
+
+.line{
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+  height: 0.2rem;
+  background: #fff;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    
+  .titulo{
+    font-size: 4rem;
+  }
+
+  .contenedor__prestacion{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 57%;
+  }
+
+  .contenedor__footer{
+    justify-content: center;
+  }
+
+  .social__media{
+    width: 80%;
+    justify-content: space-evenly;
+  }
+
+  .social__media i{
+    margin-left: 0;
+  }
+
+  .contact_us{
+    text-align: center;
+    width: 80%;
+    margin-bottom: 4rem;
+  }
+
+} 
+
+@media screen and (max-width: 500px){
+
+  .d-flex{
+    top: 30px;
+    right: 60px;
+  }
+
+  .titulo{
+    font-size: 30px;
+  }
+
+  .subtitulo{
+    font-size: 30px;
+  }
+
+  .contenedor__prestacion{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 95%;
+  }
 }

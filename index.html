@@ -10,7 +10,8 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>Clinica Lima</title>
   <!--Bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 
@@ -27,7 +28,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav md-auto">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="especialidades.html">Especialidades</a>
           </li>
@@ -39,7 +40,8 @@
           </li>
         </ul>
         <form class="d-flex">
-          <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true"> Turno</a>
+          <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">
+            Turno</a>
         </form>
       </div>
     </div>
@@ -70,7 +72,6 @@
     </button>
   </div>
 
-
   <!--Prestaciones-->
 
   <header class="header">
@@ -86,88 +87,108 @@
 
   </header>
 
-  <main class="contenedor">
+  <main>
 
-    <h2 class="subtitulo">Nuestras Prestaciones</h2>
+    <section class="services contenedor">
 
-    <div class="contenedor__prestacion">
-      <div class="card" style="width: 30rem;">
-        <img src="/Proyecto-main/Imagenes/Recepcion - P.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Recepcion</h5>
-          <p class="card-text"></p>
+      <section class="gallery">
+        <div class="contenedor">
+          <h2 class="subtitulo">Nuestras Prestaciones</h2>
+          <div class="contenedor_galeria">
+            <div class="carta">
+              <img class="img_galeria" src="/Proyecto-main/Imagenes/Recepcion - P.jpg" alt="Recepcion">
+              <p class="Descripcion">Recpecion</p>
+            </div>
+            <div>
+              <img class="img_galeria" src="/Proyecto-main/Imagenes/Cirugia-P.jpg" alt="Cirugia">
+              <p class="Descripcion">Cirugia</p>
+            </div>
+            <div>
+              <img class="img_galeria" src="/Proyecto-main/Imagenes/Imagenes -P.jpg" alt="Imagenes">
+              <p class="Descripcion">Imagenes</p>
+            </div>
+            <div>
+              <img class="img_galeria" src="/Proyecto-main/Imagenes/Internacion - P.jpg" alt="Internacion">
+              <p class="Descripcion">Internacion</p>
+            </div>
+            <div>
+              <img class="img_galeria" src="/Proyecto-main/Imagenes/Laboratorio - P.jpg" alt="Laboratorio">
+              <p class="Descripcion">Laboratorio</p>
+            </div>
+            <div>
+              <img class="img_galeria" src="/Proyecto-main/Imagenes/Quirofano - P.jpg" alt="Quirofano">
+              <p class="Descripcion">Quirofano</p>
+            </div>
+
+          </div>
+
         </div>
-      </div><!--Prestacion-->
 
-      <div class="card" style="width: 30rem;">
-        <img src="/Proyecto-main/Imagenes/Quirofano - P.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Quirofano</h5>
-        </div>
-      </div> <!--Prestacion-->
+      </section>
 
-      <div class="card" style="width: 30rem;">
-        <img src="/Proyecto-main/Imagenes/Laboratorio - P.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Laboratorio</h5>
-        </div>
-      </div> <!--Prestacion-->
+    </section>
 
-      <div class="card" style="width: 30rem;">
-        <img src="/Proyecto-main/Imagenes/Cirugia-P.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Cirugia</h5>
-        </div>
-      </div> <!--Prestacion-->
 
-      <div class="card" style="width: 30rem;">
-        <img src="/Proyecto-main/Imagenes/Imagenes -P.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Imagenes</h5>
-        </div>
-      </div><!--Prestacion-->
-
-      <div class="card" style="width: 30rem;">
-        <img src="/Proyecto-main/Imagenes/Internacion - P.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Internacion</h5>
-        </div>
-      </div> <!--Prestacion-->
 
     </div>
 
   </main>
 
-<form class="formulario">
-  <label for="apynom">Obra Social</label>
-        <input class="input_text"type="text" id="apynom">
-		<br>
-        <label class="advertencia" id="Mensaje1"></label>
+  <form class="formulario">
+    <label for="apynom">Obra Social</label>
+    <input class="input_text" type="text" id="apynom">
     <br>
-		<label for="correo">Especialista</label>
-        <input class="input_text" type="text" id="correo">
-		<br>
-        <label class="advertencia" id="Mensaje2"></label>
-        <br>
+    <label class="advertencia" id="Mensaje1"></label>
+    <br>
+    <label for="correo">Especialista</label>
+    <input class="input_text" type="text" id="correo">
+    <br>
+    <label class="advertencia" id="Mensaje2"></label>
+    <br>
     <label for="Telefono">Seleccione fecha</label>
-        <input class="input_text" type="number" id="Telefono">
-		<br>
-        <label class="advertencia" id="Mensaje3"></label>
+    <input class="input_text" type="number" id="Telefono">
     <br>
-		<button onclick="ValidarDatos()">Solicitar</button> 
-</form>
+    <label class="advertencia" id="Mensaje3"></label>
+    <br>
+    <button onclick="ValidarDatos()">Solicitar</button>
+  </form>
 
 </body>
 
 
 <footer class="footer">
-  <i class='bx bxl-twitter'></i>
-  <i class='bx bxl-facebook'></i>
-  <i class='bx bxl-instagram-alt'></i>
+  <div class="contenedor__footer">
+    <div class="contact_us">
+      <h2 class="brand">Clinica Lima</h2>
+      <p class="brand_texto">
+        Direccion: Lima 360 <br>
+        Contacto: 1126543815
+      </p>
+    </div>
+
+    <div class="social__media">
+      <a href="" class="social__icon">
+        <i class='bx bxl-twitter'></i>
+      </a>
+      <a href="" class="social__icon">
+        <i class='bx bxl-facebook'></i>
+      </a>
+      <a href="" class="social__icon">
+        <i class='bx bxl-instagram-alt'></i>
+      </a>
+    </div>
+
+  </div>
+  <div class="line"></div>
+
   <p class="footer__texto"> Copyright ©2023 Clínica Lima - Diseñado por Grupo ISPC</p>
+
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+  integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 <script src="/Proyecto-main/menu.js"></script>
+
 </html>
