@@ -169,19 +169,18 @@ font-size: 1.5rem;
 
 /*INSTITUCION*/
 .contenedorbotones{
-background-color: var(--secundario);
+  background-color: #76c5fa;
 padding: 20px;
 display: flex;
 margin: auto;
-width: 50%;
 height: 100px;
-justify-content:space-around ;
+justify-content:center;
 flex-wrap: wrap;
 align-items: center;
+line-height: center;
 }
 
 .caja{
-background-color: var(--primario);
 border-radius: 5px;
 width: 100px;
 height: 50px;
@@ -250,7 +249,6 @@ ul{font-size: 1.8rem;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--secundario);
 }
-
 
 /*ESPECIALIDADES*/
  .cont1esp{
